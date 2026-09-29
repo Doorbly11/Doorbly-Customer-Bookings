@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, button, input, select, textarea {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Card Typography Styling - Clean Regular / Medium Weights with Poppins */
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.card-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.card-subtext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.card-action {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #doorbly-tax-invoice, #doorbly-tax-invoice * {
+    visibility: visible;
+  }
+  #doorbly-tax-invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Custom scrollbar for vertical category tray */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+/* Smooth Infinite Marquee Scrolling for headlines and banners */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+
