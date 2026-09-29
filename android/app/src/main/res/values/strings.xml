@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Doorbly</string>
+    <string name="web_url">https://ais-pre-d2zmozb67dgrf6ollqvwqv-955334821892.asia-southeast1.run.app</string>
+    <string name="offline_title">No Internet Connection</string>
+    <string name="offline_message">Please check your network and retry to access Doorbly services.</string>
+    <string name="retry">Retry</string>
+</resources>
